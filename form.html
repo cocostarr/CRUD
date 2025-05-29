@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATIONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hello there! What's on your mind today?</h2>
+        <form id="postForm">
+        <input type="text" id="title" placeholder="Post Title" required>
+        <textarea id="body" placeholder="Share your thoughts?" required cols="50px" rows="15px"></textarea>
+        <button type="submit">Create Post</button>
+        </form>
+    </div>
+    <div class="post-container">
+        <button id="showAllPostsBtn">All Posts</button>
+        <div id="localPostsContainer"></div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
