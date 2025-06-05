@@ -10,6 +10,17 @@ body{
     min-height: 100vh;
     box-sizing: border-box; 
 }
+.hero h1{
+    color: #f39c12;
+    font-size: 3.2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.hero p{
+    font-size: 1.6em; 
+    color: #bdc3c7; 
+    text-align: center;
+}
 .container{
     background-color: #34495e;
     padding: 30px;
@@ -18,7 +29,7 @@ body{
     text-align: center;
     max-width: 800px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 h1{
     color: #f39c12;
@@ -30,7 +41,7 @@ h2{
     font-size: 2.2em;
     margin-bottom: 25px;
 }
-p {
+p{
     font-size: 20px;
     margin-bottom: 25px;
 }
@@ -54,7 +65,7 @@ p {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     /* display: grid; 
     gap: 20px;  */
@@ -74,7 +85,12 @@ input[type="text"], textarea{
     color: #333; 
     max-width: 600px;
 }
-button[type="submit"] {
+/* input[type="file"]{
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+} */
+button[type="submit"]{
     background-color: #f39c12; 
     color: #2C3E50; 
     padding: 14px 30px;
@@ -100,6 +116,15 @@ button[type="submit"]:hover {
     width: 100%;
     margin-top: 30px; 
 }
+.post-container img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-top: 10px;
+  object-fit: cover;
+  max-height: 400px;
+}
 #showAllPostsBtn{
     background-color: #f39c12;
     color: #2c3e50; 
@@ -110,10 +135,51 @@ button[type="submit"]:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-weight: bold;
-    margin-bottom: 25px; /* More space below the button */
+    margin-bottom: 25px;
 }
 #showAllPostsBtn:hover{
     background-color: #e67e22;
     transform: translateY(-2px);
 }
-
+a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #ecf0f1;
+}
+#previewImage{
+    display: none;
+    max-width: 100%; 
+    height: 400px; 
+    width: auto;  
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.edit-btn{
+  background-color: #f39c12;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.delete-btn{
+  background-color: #de041a;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.postpost-container{
+    /* background-color: #F0E68C; */
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}

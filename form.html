@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD OPERATIONS</title>
+    <title>Food Recipe Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <header class="hero">
+        <h1>🍽️ My Food Recipe Blog</h1>
+        <p>Share your favorite meals and recipe with the world!🤤</p>
+    </header>
     <div class="container">
-        <h2>Hello there! What's on your mind today?</h2>
         <form id="postForm">
-        <input type="text" id="title" placeholder="Post Title" required>
-        <textarea id="body" placeholder="Share your thoughts?" required cols="50px" rows="15px"></textarea>
-        <button type="submit">Create Post</button>
+        <h2>Create a Recipe</h2>
+        <input type="text" id="title" placeholder="recipe title" required>
+        <textarea id="body" placeholder="Write your recipe..." required cols="50px" rows="15px"></textarea>
+        <input type="file" id="imageInput" accept="image/*" />
+        <img id="previewImage" style="max-width: 100%; border-radius: 10px; margin-top: 10px;" />
+        <button type="submit">Create Recipe</button>
         </form>
     </div>
+    <input type="text" id="searchInput" placeholder="Search recipes...">
     <div class="post-container">
-        <button id="showAllPostsBtn">All Posts</button>
+        <button id="showAllPostsBtn">Show All Recipes</button>
         <div id="localPostsContainer"></div>
     </div>
 
